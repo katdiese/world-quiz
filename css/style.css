@@ -27,13 +27,14 @@
 }
 .form {
   padding: 1em;
-  z-index: 1000;
+  z-index: 100;
   background-color: #fff;
   width: 24em;
   position: absolute;
   top: 32em;
   right: 47em;
   border-radius: 1em;
+  font-family: Ubuntu, sans-serif;
 }
 
 @media only screen and (max-width:1280px) {
@@ -51,10 +52,6 @@
     right: 20em; 
   }
 }
-
-.form {
-  font-family: Ubuntu, sans-serif;
-}
 .form >h2{
   font-size: 1.15em;
   font-weight: 700;
@@ -62,6 +59,25 @@
 }
 .form:hover {
   cursor: pointer;
+}
+.finish {
+  text-align: center;
+  height: 3em;
+  background-color: orange;
+  border-radius: 1em;
+  padding: 5em;
+  z-index:20000;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  display: none;
+}
+.tryAgain {
+  height: 5em;
+  width: 15em;
+  border-radius: 1em;
+  margin: 1em;
+  font-size: .6em;
 }
 .submit{
   height: 3.5em;
@@ -72,7 +88,8 @@
   float: left;
   margin: 2.75em 0 0 18em ;
 }
-.submit:hover{
+.submit:hover,
+.tryAgain:hover{
   cursor: pointer;
   background-color: yellow;
   color: green;
