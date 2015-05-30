@@ -6,20 +6,37 @@
   <title>World Knowledge Quiz</title>
   <link rel=stylesheet href = css/reset.css>
   <link rel=stylesheet href="css/style.css">
-  
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700|Lobster' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
   </script>
   <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
-  <ul>
+  <ul class="counter">
     <li>Question 1 of 5</li>
     <li>Number Correct: 0/5</li>
   </ul>
-  <h2>What is the smallest country in the world?</h2>
-  <form>
-    <input type="radio" value="radio group" name="The Vatican">
-  </form>
+  <h1 class = "topTitle">
+    World Knowledge Quiz
+  </h1>
+  <div class="question">
+    <div class="form">
+      <h2>What is the smallest country in the world?</h2>
+      <form>
+        <input type="radio" name="guess" value="Vatican" >The Vatican<br>
+        <input type="radio" name="guess" value="Zimbabwe">Zimbabwe<br>
+        <input type="radio" name="guess" value="Philippines">The Philippine Islands<br>
+        <input type="radio" name="guess" value="Nepal">Nepal<br>
+        <input type="radio" name="guess" value="Costa Rica">Costa Rica<br>
+      </form>
+    </div>
+  </div>
+  <button>Submit Answer</button>
+  <div class="fact">
+    <p>
+      The Vatican is the smallest country in the world, it fits wihtin the Italian Capital of Rome and is the center of the Catholic Church!  It is also known as the Holy See.
+    </p>
+  </div>
 </body>
 
 </html>

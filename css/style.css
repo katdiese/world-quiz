@@ -1,0 +1,56 @@
+.counter {
+  height: 5em;
+  padding: 2em;
+}
+.counter > li {
+  display: inline;
+  margin-right: 10em;
+  margin-left: 10em;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 700;
+  
+} 
+.topTitle {
+  padding-left: 5em;
+  font-size: 3.25em;
+  font-family: Lobster, serif;
+  margin-bottom: 1.5em;
+}
+.question {
+  height: 40em;
+  max-width: 40em;
+  margin: auto;
+  background-image: url("../images/planet.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 0;
+}
+.form {
+  padding: 1em;
+  z-index: 1000;
+  background-color: #fff;
+  width: 24em;
+  position: absolute;
+  top: 32em;
+  right: 28em;
+  border-radius: 1em;
+}
+.form {
+  font-family: Ubuntu, sans-serif;
+}
+.form >h2{
+  font-size: 1.15em;
+  font-weight: 700;
+  padding: .25em;
+}
+.submit{
+  height: 3.5em;
+  max-width: 7em;
+  border-radius: 12px;
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.25em;
+  float: left;
+}
+.fact{
+  float: left;
+}
