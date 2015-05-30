@@ -43,6 +43,9 @@
   font-weight: 700;
   padding: .25em;
 }
+.form:hover {
+  cursor: pointer;
+}
 .submit{
   height: 3.5em;
   max-width: 7em;
@@ -50,7 +53,18 @@
   font-family: Ubuntu, sans-serif;
   font-size: 1.25em;
   float: left;
+  margin: 2.75em 0 0 18em ;
+}
+.submit:hover{
+  cursor: pointer;
+  background-color: yellow;
+  color: green;
+  font-weight: 700;
 }
 .fact{
   float: left;
+  margin: 3em 0 7em 7em;
+  width: 23em;
+  font-family: Lobster, serif;
+  font-size: 1.1em;
 }
