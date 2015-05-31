@@ -1,8 +1,8 @@
-.counter {
+.quizStatus {
   height: 5em;
   padding: 2em;
 }
-.counter > li {
+.quizStatus > li {
   display: inline;
   margin-right: 10em;
   margin-left: 10em;

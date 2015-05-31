@@ -8,7 +8,7 @@ $(document).ready(function() {
     "What is the newest country in the world?",
     "What country has the smallest population in the world?"
   ];
-//  var questionLength = question.length;
+
   
   var funFact = [
     "",
@@ -18,19 +18,22 @@ $(document).ready(function() {
     "South Sudan gained independence from Sudan in July 2011 as the outcome of a 2005 peace deal that ended Africa's longest running civil war.",
     "The population of the Pitcairn Islands has fluctuated between 40 and 60 people in recent years."
   ];
-//  var funFactLength = funFact.length;
-  var counter = 0;
-//  console.log(funFact[funFactCounter]);
+  var arrayCounter = 0;
+  var questionCounter = 1;
   
   $(".submit").click(function() {
-      counter++;
-      if(counter < 5){
-        $(".fact").html("Fun Fact!<br>" + funFact[counter]);
-        $(".topQuestion").html(question[counter]);
+    arrayCounter++;
+    questionCounter++;
+      
+    if(arrayCounter < 5){
+      $(".fact").html("Fun Fact!<br>" + funFact[arrayCounter]);
+      $(".topQuestion").html(question[arrayCounter]);
+      $(".questionNumber").html("<li>Question #" + questionCounter + "/5</li>");
+      $(".quizStatus").css("margin-left","10em");
       }
-      else if (counter >= 5) {
-        $(".finish").show();
-        $(".form").hide();
+    else if (arrayCounter >= 5) {
+      $(".finish").show();
+      $(".form").hide();
       }
     });
   
