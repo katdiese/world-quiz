@@ -7,23 +7,23 @@ $(document).ready(function() {
   var questions = [{
     question: "What is the smallest country in the world?",
     choice: ["The Vatican", "Zimbabwe", "The Philippine Islands","Nepal","Costa Rica"],
-    correct: "The Vatican" },
+    correct: 0 },
                   {
     question: "Which country is the Durian Fruit native to?", 
     choice:  ["Australia", "Russia", "Thailand", "Brazil", "Greenland"],
-    correct: "Thailand"},
+    correct: 2},
                   {
     question: 'Which country has a municipality called "Saint-Louis-Du-Ha!-Ha!"',                
     choice: ["Germany", "France", "New Zealand", "Switzerland", "Canada"],
-    correct: "Canada" },
+    correct: 4 },
                   {
     question: "What is the newest country in the world?",            
     choice: ["United States", "South Sudan", "Scotland", "Montenegro", "Quebec"],
-    correct: "South Sudan" },
+    correct: 1 },
                    {
     question: "What country has the smallest population in the world?",                 
     choice: ["The Vatican", "Antigua", "The Pitcairn Islands", "Liechtenstein", "Monaco"],
-    correct: "The Pitcairn Islands" }]
+    correct: 2 }]
   
   var funFact = [
     "",
@@ -83,7 +83,7 @@ $(document).ready(function() {
     $(".questionNumber").html("<li>Question #" + position + "/5</li>");
   } 
   
- $(".tryAgain").click(function(e) {
+  $(".tryAgain").click(function(e) {
     location.reload(false);
-  });
+    });
 });
