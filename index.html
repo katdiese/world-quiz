@@ -7,38 +7,42 @@
   <link rel=stylesheet href = css/reset.css>
   <link rel=stylesheet href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700|Lobster' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-  </script>
-  <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
   <ul class="quizStatus">
     <li class ="questionNumber">Question #1/5</li>
-    <li>Number Correct: 0/5</li>
+    <li class="currentScore">Number Correct: 0/5</li>
   </ul>
-  <h1 class = "topTitle">
-    World Knowledge Quiz
-  </h1>
-  <div class="question">
-    <div class="form">
-      <h2 class = "topQuestion">What is the smallest country in the world?</h2>
-      <form>
-        <input type="radio" name="guess" value="Vatican" >The Vatican<br>
-        <input type="radio" name="guess" value="Zimbabwe">Zimbabwe<br>
-        <input type="radio" name="guess" value="Philippines">The Philippine Islands<br>
-        <input type="radio" name="guess" value="Nepal">Nepal<br>
-        <input type="radio" name="guess" value="Costa Rica">Costa Rica<br>
-      </form>
+  <div class="content">
+    <h1 class = "topTitle">
+      World Knowledge Quiz
+    </h1>
+    <div class="question">
+      <div class="form">
+        <h2 class = "topQuestion">What is the smallest country in the world?</h2>
+        <div class="choiceBoxes">
+          <form id = "meow">
+            <input type="radio" name="guess" class="option" value="The Vatican" >The Vatican<br>
+            <input type="radio" name="guess" value="Zimbabwe">Zimbabwe<br>
+            <input type="radio" name="guess" value="The Philippine Islands">The Philippine Islands<br>
+            <input type="radio" name="guess" value="Nepal">Nepal<br>
+            <input type="radio" name="guess" value="Costa Rica">Costa Rica<br>
+          </form>
+        </div>
+      </div>
+      <div class="finish">
+        <h2> Congratulations on completing the quiz!  You've gotten 4/5 Correct</h2>
+        <button class="tryAgain">Try Again!</button>
+      </div>
     </div>
-    <div class="finish">
-      <h2> Congratulations on completing the quiz!  You've gotten 4/5 Correct</h2>
-      <button class="tryAgain">Try Again!</button>
+    <button class="submit" id="enter">Submit Answer</button>
+    <div class="fact">
     </div>
-  </div>
-  <button class="submit">Submit Answer</button>
-  <div class="fact">
     
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>

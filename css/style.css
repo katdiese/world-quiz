@@ -31,8 +31,9 @@
   background-color: #fff;
   width: 24em;
   position: absolute;
-  top: 32em;
-  right: 47em;
+  max-width: 416px;
+  margin: auto;
+  margin-top: 15em;
   border-radius: 1em;
   font-family: Ubuntu, sans-serif;
 }
