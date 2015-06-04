@@ -29,7 +29,7 @@ $(document).ready(function() {
     "",
     "The Vatican fits within the Italian Capital of Rome and is the center of the Catholic Church! It is also known as the Holy See.",
     "The Durian Fruit is native to Thailand and has a smell that has been described by some to be similar to rotten onions, turpentine, and raw sewege. It has been banned from certain hotels and public transportation (including airports) in Southeast Asia",
-    "Saint-Louis-du-Ha! Ha! is in Quebec, Canada, and is the only town in the world with two exclamation markets in its name. Ha-ha is an archaic French word for an unexpected obstacle or abruptly ending path. ",
+    "Saint-Louis-du-Ha! Ha! is in Quebec, Canada, and is the only town in the world with two exclamation marks in its name. Ha-ha is an archaic French word for an unexpected obstacle or abruptly ending path. ",
     "South Sudan gained independence from Sudan in July 2011 as the outcome of a 2005 peace deal that ended Africa's longest running civil war.",
     "The population of the Pitcairn Islands has fluctuated between 40 and 60 people in recent years."
   ]
