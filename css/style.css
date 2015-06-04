@@ -3,7 +3,7 @@
   padding: 2em;
 }
 .quizStatus > li {
-  display: inline;
+  padding: 0.5em;
   margin-right: 10em;
   margin-left: 10em;
   font-family: Ubuntu, sans-serif;
@@ -29,29 +29,11 @@
   padding: 1em;
   z-index: 100;
   background-color: #fff;
-  width: 24em;
   position: absolute;
-  max-width: 416px;
-  margin: auto;
-  margin-top: 15em;
+  max-width: 24em;
+  margin: 15em 0 0 7em;
   border-radius: 1em;
   font-family: Ubuntu, sans-serif;
-}
-
-@media only screen and (max-width:1280px) {
-  .form {
-    right: 27em; 
-  }
-}
-@media only screen and (max-width:1280px) {
-  .form {
-    right: 27em; 
-  }
-}
-@media only screen and (max-width:1048px) {
-  .form {
-    right: 20em; 
-  }
 }
 .form >h2{
   font-size: 1.15em;
@@ -63,7 +45,7 @@
 }
 .finish {
   text-align: center;
-  height: 3em;
+  height: 15em;
   background-color: orange;
   border-radius: 1em;
   padding: 5em;
@@ -73,11 +55,20 @@
   font-size: 1.5em;
   display: none;
 }
-.tryAgain {
-  height: 5em;
-  width: 15em;
+.finalScore {
+  text-align: center;
+  height: 4em;
+  max-width: 20em;
+  margin: auto;
+  padding: 1em;
+  background-color: #fff;
   border-radius: 1em;
-  margin: 1em;
+}
+.tryAgain {
+  height: 4em;
+  width: 8em;
+  border-radius: 1em;
+  margin: 2em;
   font-size: .6em;
 }
 .submit{
@@ -102,4 +93,35 @@
   width: 23em;
   font-family: Lobster, serif;
   font-size: 1.1em;
+}
+@media only screen and (max-width:773px) {
+  .question {
+    height:35em;
+    width: 35em;
+  }
+  .form {
+    margin: 12em 0 0 5em;
+  }
+}
+@media only screen and (max-width:555px) {
+  .question {
+    height: 27em;
+    width: 27em;
+  }
+  .form {
+    margin: 9em 0 0 1em;
+  }
+  .topTitle {
+    font-size: 2.5em;
+    padding-left: 2em;
+  }
+  .submit {
+    margin-left: 3em;
+  }
+  .finalScore {
+    height: 6em;
+  }
+  .finish {
+    height: 10em;
+  }
 }
