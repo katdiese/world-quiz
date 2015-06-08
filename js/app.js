@@ -3,7 +3,7 @@ $(document).ready(function() {
   var currentScore = 0;
   var position = 1;
 
-  var questions = [{
+  var quiz = [{
     question: "What is the smallest country in the world?",
     choice: ["The Vatican", "Zimbabwe", "The Philippine Islands","Nepal","Costa Rica"],
     correct: 0,
@@ -105,28 +105,24 @@ $(document).ready(function() {
     funFact: "There were around 16,000 people served lunch at a table in Portugal during Vasco da Gama Bridge's inauguration in Lisbon"              }
                   ]
   
-  console.log(questions[20].question);
-  
-  var randomQuestionNumber = Math.floor((Math.random() * 20) + 1 );
+  var randomQuestionNumber = Math.floor((Math.random() * 19) + 1 );
                           
-  
-  var currentQuestion = questions[randomQuestionNumber];
+  var currentQuestion = quiz[randomQuestionNumber];
   nextQuestion(currentQuestion);
    
    $(".content").on("click", "#enter",function(e) {
      e.preventDefault();
+     var randomQuestionNumber = Math.floor((Math.random() * 19) + 1 );
      score();
-     var funFact = currentQuestion.funFact;
-     var randomQuestionNumber = Math.floor((Math.random() * 20) + 1 );
-     questions.splice(currentQuestion);
-     currentQuestion = questions[randomQuestionNumber];
-     nextQuestion(currentQuestion);
      updateProgress();
+     var funFact = currentQuestion.funFact;
       $(".fact").html("Fun Fact!<br>" + funFact);
+     currentQuestion = quiz[randomQuestionNumber];
+     nextQuestion(currentQuestion);
    });
    
   function nextQuestion(myQuestion){
-    if(position < 5) {
+    if(position < 6) {
       $(".topQuestion").remove();
       $(".choiceBoxes").remove();
       var newQuestion = '<h2 class="topQuestion">'
